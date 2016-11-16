@@ -15,6 +15,8 @@ How to deploy jar to the mvn-repo.
 3. Push to GitHub
 	cd /path/to/mvn-repo/
 	git add -A
+	git status
+	git commit -m "Commit message"
 	git push -u origin master
 
 4. Change the version number in the pom of your project to use the latest version.
