@@ -1,4 +1,19 @@
-How to deploy jar to the mvn-repo.
+How to add this repo to your project
+------------------------------------
+
+Add this to your project .pom file:
+    <repositories>
+        <!-- AIMS ks maven repository on GitHub -->
+        <repository>
+            <id>aims-ks.mvn-repo</id>
+            <name>AIMS Knowledge System MVN Repo</name>
+            <url>https://raw.githubusercontent.com/aims-ks/mvn-repo/master/</url>
+        </repository>
+    </repositories>
+
+
+How to deploy jar to the mvn-repo
+---------------------------------
 
 1. Compile the jar
 	mvn clean + mvn package
