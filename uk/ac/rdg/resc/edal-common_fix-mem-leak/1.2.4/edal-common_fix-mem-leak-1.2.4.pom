@@ -5,8 +5,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>uk.ac.rdg.resc</groupId>
-	<artifactId>edal-common</artifactId>
-	<version>1.2.4_fix-mem-leak</version>
+	<artifactId>edal-common_fix-mem-leak</artifactId>
+	<version>1.2.4</version>
 	<packaging>jar</packaging>
 	<name>Edal common - Fix memory leak</name>
 
@@ -64,6 +64,7 @@
 	</dependencies>
 
 	<!-- Build a edal-common jar using the class from the actual jar + my version of HorizontallyDiscreteDataset -->
+<!--
 	<build>
 		<plugins>
 			<plugin>
@@ -96,5 +97,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
+-->
 </project>
