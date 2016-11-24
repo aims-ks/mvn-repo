@@ -11,32 +11,11 @@
 	<name>Edal common - Fix memory leak</name>
 
 	<properties>
-		<!-- TODO REMOVE Temporary requirement for debugging Memory Leak in "edal" libraries. -->
+		<!-- edal-common was compiled for Java 1.8 -->
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 
 		<edalVersion>1.2.4</edalVersion>
-		<!--
-			The UCAR library version 5.0.0 are not yet available on the main maven repository.
-			UCAR provide a repository, but it's not reliable (old jar are frequently deleted).
-			To compile this jar, the UCAR jar versions may have to be updated for versions which are still available.
-			Available versions (from UCAR snapshots repo):
-				https://artifacts.unidata.ucar.edu/content/repositories/unidata-snapshots/edu/ucar/cdm/5.0.0-SNAPSHOT/
-				https://artifacts.unidata.ucar.edu/content/repositories/unidata-snapshots/edu/ucar/udunits/5.0.0-SNAPSHOT/
-				https://artifacts.unidata.ucar.edu/content/repositories/unidata-snapshots/edu/ucar/netcdf4/5.0.0-SNAPSHOT/
-				https://artifacts.unidata.ucar.edu/content/repositories/unidata-snapshots/edu/ucar/grib/5.0.0-SNAPSHOT/
-				https://artifacts.unidata.ucar.edu/content/repositories/unidata-snapshots/edu/ucar/opendap/5.0.0-SNAPSHOT/
-			NOTE:
-				Use a v5 release as soon as available:
-					https://artifacts.unidata.ucar.edu/content/repositories/unidata-releases/edu/ucar/cdm/
-				If v5 get released to the main maven repo, use those instead and remove the "UCAR" repo bellow.
-					http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22edu.ucar%22
-		-->
-		<ucarCdmVersion    >5.0.0-20161115.125031-22</ucarCdmVersion>
-		<ucarUdunitsVersion>5.0.0-20161115.125255-21</ucarUdunitsVersion>
-		<ucarNetcdf4Version>5.0.0-20161115.125107-21</ucarNetcdf4Version>
-		<ucarGribVersion   >5.0.0-20161115.125047-22</ucarGribVersion>
-		<ucarOpendapVersion>5.0.0-20161115.125109-21</ucarOpendapVersion>
 	</properties>
 
 	<repositories>
@@ -62,40 +41,4 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-	<!-- Build a edal-common jar using the class from the actual jar + my version of HorizontallyDiscreteDataset -->
-<!--
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>unpack</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>unpack</goal>
-						</goals>
-						<configuration>
-							<artifactItems>
-								<artifactItem>
-									<groupId>uk.ac.rdg.resc</groupId>
-									<artifactId>edal-common</artifactId>
-									<version>${edalVersion}</version>
-									<type>jar</type>
-									<overWrite>true</overWrite>
-									<outputDirectory>${project.build.directory}/classes</outputDirectory>
-									<excludes>
-										**/HorizontallyDiscreteDataset.class
-									</excludes>
-								</artifactItem>
-							</artifactItems>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
--->
 </project>
