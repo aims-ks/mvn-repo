@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>uk.ac.rdg.resc</groupId>
+  <artifactId>edal-common</artifactId>
+  <version>1.2.4_fix-mem-leak</version>
+  <versioning>
+    <versions>
+      <version>1.2.4_fix-mem-leak</version>
+    </versions>
+    <lastUpdated>20161124050225</lastUpdated>
+  </versioning>
+</metadata>
