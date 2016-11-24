@@ -63,4 +63,38 @@
 		</dependency>
 	</dependencies>
 
+	<!-- Build a edal-common jar using the class from the actual jar + my version of HorizontallyDiscreteDataset -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>unpack</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>unpack</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>uk.ac.rdg.resc</groupId>
+									<artifactId>edal-common</artifactId>
+									<version>${edalVersion}</version>
+									<type>jar</type>
+									<overWrite>true</overWrite>
+									<outputDirectory>${project.build.directory}/classes</outputDirectory>
+									<excludes>
+										**/HorizontallyDiscreteDataset.class
+									</excludes>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
 </project>
