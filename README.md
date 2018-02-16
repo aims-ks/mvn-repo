@@ -17,6 +17,7 @@ How to deploy jar to the mvn-repo
 ---------------------------------
 
 1. Compile the jar
+
 	mvn clean + mvn package
 
 2. Deploy in this project
@@ -43,3 +44,4 @@ How to deploy jar to the mvn-repo
 		git push -u origin master
 
 4. Change the version number in the pom of your project to use the latest version.
+
