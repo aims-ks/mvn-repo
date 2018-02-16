@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>edu.ucar</groupId>
+  <artifactId>jj2000</artifactId>
+  <version>5.3</version>
+  <versioning>
+    <versions>
+      <version>5.3</version>
+    </versions>
+    <lastUpdated>20180216020624</lastUpdated>
+  </versioning>
+</metadata>
