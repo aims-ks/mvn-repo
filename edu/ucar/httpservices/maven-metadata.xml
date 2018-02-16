@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>edu.ucar</groupId>
+  <artifactId>httpservices</artifactId>
+  <version>5.0.0-alpha3</version>
+  <versioning>
+    <versions>
+      <version>5.0.0-alpha3</version>
+    </versions>
+    <lastUpdated>20180216014645</lastUpdated>
+  </versioning>
+</metadata>
