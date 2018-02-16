@@ -2,6 +2,7 @@ How to add this repo to your project
 ------------------------------------
 
 Add this to your project .pom file:
+
     <repositories>
         <!-- AIMS ks maven repository on GitHub -->
         <repository>
