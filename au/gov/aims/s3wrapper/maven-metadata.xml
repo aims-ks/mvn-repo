@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>au.gov.aims</groupId>
+  <artifactId>s3wrapper</artifactId>
+  <version>0.2</version>
+  <versioning>
+    <versions>
+      <version>0.2</version>
+    </versions>
+    <lastUpdated>20180917025438</lastUpdated>
+  </versioning>
+</metadata>
