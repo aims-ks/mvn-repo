@@ -2,11 +2,11 @@
 <metadata>
   <groupId>uk.ac.rdg.resc</groupId>
   <artifactId>edal-common_fix-mem-leak</artifactId>
-  <version>1.2.4</version>
   <versioning>
+    <release>1.2.4</release>
     <versions>
       <version>1.2.4</version>
     </versions>
-    <lastUpdated>20161124054401</lastUpdated>
+    <lastUpdated>20190729025427</lastUpdated>
   </versioning>
 </metadata>
