@@ -18,14 +18,20 @@ Add this to your project .pom file:
 How to deploy jar to the mvn-repo
 ---------------------------------
 
-1. Compile the jar
+1. Update the mvn-repo project
+	```
+	cd /path/to/mvn-repo/
+	git pull
+	```
+
+2. Compile the jar
 
 	```
 	mvn clean
 	mvn package
 	```
 
-2. Deploy in this project
+3. Deploy in this project
 
 	Replace "/path/to" with the path to the "mvn-repo" folder on your local computer.
 
@@ -43,15 +49,14 @@ How to deploy jar to the mvn-repo
 	mvn deploy:deploy-file -Durl=file:///home/glafond/Desktop/projects/Intellij/projects/mvn-repo/ -DpomFile=/home/glafond/Desktop/projects/Intellij/projects/json/pom.xml -Dfile=/home/glafond/Desktop/projects/Intellij/projects/json/target/json-1.0.3.jar -DgroupId=au.gov.aims -DartifactId=json -Dpackaging=jar -Dversion=1.0.3
 	```
 
-3. Push to GitHub
+4. Push to GitHub
 	```
 	cd /path/to/mvn-repo/
-	git pull
 	git add -A
 	git status
 	git commit -m "Commit message"
 	git push -u origin master
 	```
 
-4. Change the version number in the pom of your project to use the latest version.
+5. Change the version number in the pom of your project to use the latest version.
 
