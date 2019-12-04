@@ -46,6 +46,7 @@ How to deploy jar to the mvn-repo
 3. Push to GitHub
 	```
 	cd /path/to/mvn-repo/
+	git pull
 	git add -A
 	git status
 	git commit -m "Commit message"
