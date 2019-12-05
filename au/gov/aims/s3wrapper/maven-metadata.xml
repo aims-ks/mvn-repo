@@ -3,7 +3,7 @@
   <groupId>au.gov.aims</groupId>
   <artifactId>s3wrapper</artifactId>
   <versioning>
-    <release>0.3.28</release>
+    <release>0.3.28-DEBUG</release>
     <versions>
       <version>0.2</version>
       <version>0.2.1</version>
@@ -36,7 +36,8 @@
       <version>0.3.26</version>
       <version>0.3.27</version>
       <version>0.3.28</version>
+      <version>0.3.28-DEBUG</version>
     </versions>
-    <lastUpdated>20191205051433</lastUpdated>
+    <lastUpdated>20191205054733</lastUpdated>
   </versioning>
 </metadata>
