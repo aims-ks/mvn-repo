@@ -3,7 +3,7 @@
   <groupId>au.gov.aims</groupId>
   <artifactId>layers2svg</artifactId>
   <versioning>
-    <release>0.1.15</release>
+    <release>0.2.0</release>
     <versions>
       <version>0.1</version>
       <version>0.1.1</version>
@@ -21,7 +21,8 @@
       <version>0.1.13</version>
       <version>0.1.14</version>
       <version>0.1.15</version>
+      <version>0.2.0</version>
     </versions>
-    <lastUpdated>20200310070230</lastUpdated>
+    <lastUpdated>20200311024054</lastUpdated>
   </versioning>
 </metadata>
