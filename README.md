@@ -3,7 +3,9 @@ DEPRECATED
 
 This project is now **DEPRECATED**.
 
-Please, use the maven repositories provided by [GitHub Packages](/orgs/aims-ks/packages) or the [mvn-mirror-repo](/aims-ks/mvn-mirror-repo)
+Please, use the maven repositories provided by
+[GitHub Packages](https://github.com/orgs/aims-ks/packages) or the
+[mvn-mirror-repo](https://github.com/aims-ks/mvn-mirror-repo)
 for the mirrored libraries such as the edal libraries.
 
 How to add this repo to your project
